@@ -1,43 +1,44 @@
-# Multi-Container TODO Application
+This project is a simple TODO application created to test and enhance my knowledge of containerization using Docker. It demonstrates a multi-container setup utilizing Docker Compose to manage the application’s architecture.
+Features
 
-This is a sample TODO application provided as part of Docker Desktop's tutorial. It demonstrates a multi-container setup using Docker Compose.
+    Multi-container architecture (frontend, backend, and database)
+    Easy deployment using Docker Compose
+    Interactive TODO list functionality
 
-## Features
-- Multi-container architecture (frontend, backend, and database)
-- Easy deployment using Docker Compose
-- Interactive TODO list functionality
+Prerequisites
 
-## Prerequisites
-- Docker Desktop installed
-- Docker Compose
+    Docker Desktop installed
+    Docker Compose
 
-## Setup Instructions
+Setup Instructions
 
-1. Clone the repository:
+    Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/multi-container-app.git
+    bash
 
-2. Build the Docker images:
+git clone https://github.com/Udaykirancheera15/multi-container-app.git
 
-
-docker-compose build
-
-3. Start the application:
+Build the Docker images:
 
 bash
 
-docker-compose up
+docker-compose build
 
-This will start both the TODO app and the MongoDB database containers.
+Start the application:
 
-4. Access the application:
+bash
 
-Open your web browser and go to http://localhost:3000.
+    docker-compose up
 
-5. MongoDB Database:
+    This will start both the TODO app and the MongoDB database containers.
 
-The MongoDB service will be running on localhost:27017 (default MongoDB port), but it is only accessible by the application and not exposed externally.
+    Access the application:
+
+    Open your web browser and go to http://localhost:3000.
+
+    MongoDB Database:
+
+    The MongoDB service will be running on localhost:27017 (default MongoDB port), but it is only accessible by the application and not exposed externally.
 
 Project Structure
 
@@ -90,7 +91,6 @@ bash
 docker-compose down
 
 This will stop and remove the containers, but the data stored in the MongoDB container will be lost unless volumes are defined.
-
 License
 
-This project is licensed under the MIT License. This was from my docker tutorial, I implemented with modifications to demonstrate my understanding of Docker.
+This project is licensed under the MIT License. It is based on a Docker tutorial and includes modifications demonstrating my understanding of Docker and containerization principles.
