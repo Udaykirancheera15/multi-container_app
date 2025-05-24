@@ -92,5 +92,4 @@ docker-compose down
 
 This will stop and remove the containers, but the data stored in the MongoDB container will be lost unless volumes are defined.
 License
-
-This project is licensed under the MIT License. It is based on a Docker tutorial and includes modifications demonstrating my understanding of Docker and containerization principles.
+It is based on a Docker tutorial and includes modifications demonstrating my understanding of Docker and containerization principles.
